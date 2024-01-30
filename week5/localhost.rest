@@ -1,0 +1,25 @@
+
+GET http://localhost:5000/api/cities
+
+###
+GET http://localhost:5000/api/cities/1
+
+###
+POST http://localhost:5000/api/cities 
+Content-Type: application/json
+{
+  "capital": "Luanda",
+  "country": "Angola" 
+}
+
+###
+PUT http://localhost:5000/api/cities
+Content-Type: application/json
+{
+  "id": 3,
+  "capital": "Tampere",
+  "country": "Finland" 
+}
+
+###
+DELETE http://localhost:5000/api/cities/4
